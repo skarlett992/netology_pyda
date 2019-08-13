@@ -1,0 +1,328 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2\n",
+      "Not Weird\n"
+     ]
+    }
+   ],
+   "source": [
+    "n = int(input())\n",
+    "if n % 2 == 1:\n",
+    "    print(\"Weird\")\n",
+    "elif n % 2 == 0 and 2 <= n <= 5:\n",
+    "    print(\"Not Weird\")\n",
+    "elif n % 2 == 0 and 6 <= n <= 20:\n",
+    "    print(\"Weird\")\n",
+    "else:\n",
+    "    print(\"Not Weird\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Введите свой name:nata\n",
+      "Введите свой возраст:30\n",
+      "nata 30\n"
+     ]
+    }
+   ],
+   "source": [
+    "name = input ('Введите свой name:', )\n",
+    "age = input ('Введите свой возраст:', )\n",
+    "print (name, age)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 79,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "3\n",
+      "2\n",
+      "1\n",
+      "1.5\n",
+      "9\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = int(input())\n",
+    "b = int(input())\n",
+    "\n",
+    "print(a // b)\n",
+    "print(a / b)\n",
+    "print (a**b)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "n = int(raw_input())\n",
+    "i = int()\n",
+    "for i in range(0,n):\n",
+    "    print i**2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 82,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "NameError",
+     "evalue": "name 'raw_input' is not defined",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[0;32m<ipython-input-82-2ca1b091c288>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mn\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mraw_input\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      2\u001b[0m \u001b[0;32mfor\u001b[0m \u001b[0mi\u001b[0m \u001b[0;32min\u001b[0m \u001b[0mrange\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;36m0\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mn\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      3\u001b[0m     \u001b[0mprint\u001b[0m \u001b[0;34m(\u001b[0m\u001b[0mi\u001b[0m\u001b[0;34m**\u001b[0m\u001b[0;36m2\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;31mNameError\u001b[0m: name 'raw_input' is not defined"
+     ]
+    }
+   ],
+   "source": [
+    "n = int(raw_input()) \n",
+    "for i in range(0,n): \n",
+    "    print (i**2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 93,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 93,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "long_phrase = (\"Насколько проще было бы писать программы, если бы не заказчики\")\n",
+    "short_phrase = (\"640Кб должно хватить для любых задач. Билл Гейтс (по легенде)\")\n",
+    "len(long_phrase) > len(short_phrase)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 125,
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1048576\n",
+      "Объем файла равен 1.0 Мбайт\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = int(input())\n",
+    "b = str((a/1024)/1024)\n",
+    "print('Объем файла равен ' + b + ' Мбайт')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 153,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Введите месяц Декабрь\n",
+      "Введите число 24\n",
+      "стрелец\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = str(input('Введите месяц ',  ))\n",
+    "b = int(input('Введите число ', ))\n",
+    "if a == 'декабрь' and 22 <= b <= 31 or a == 'январь' and 1 <= b <= 19:\n",
+    "    print ('козерог')\n",
+    "elif a == 'январь' and 20 <= b <= 31 or a == 'февраль' and 1 <= b <= 18:\n",
+    "    print ('водолей')\n",
+    "elif a == 'февраль' and 19 <= b <= 31 or a == 'март' and 1 <= b <= 20:\n",
+    "    print ('рыбы')\n",
+    "elif a == 'март' and 21 <= b <= 31 or a == 'апрель' and 1 <= b <= 19:\n",
+    "    print ('овен')\n",
+    "elif a == 'апрель' and 20 <= b <= 31 or a == 'май' and 1 <= b <= 20:\n",
+    "    print ('телец')\n",
+    "elif a == 'май' and 21 <= b <= 31 or a == 'июнь' and 1 <= b <= 20:\n",
+    "    print ('близнецы')\n",
+    "elif a == 'июнь' and 21 <= b <= 31 or a == 'июль' and 1 <= b <= 22:\n",
+    "    print ('рак')\n",
+    "elif a == 'июль' and 23 <= b <= 31 or a == 'август' and 1 <= b <= 22:\n",
+    "    print ('лев')\n",
+    "elif a == 'август' and 23 <= b <= 31 or a == 'сентябрь' and 1 <= b <= 22:\n",
+    "    print ('дева')\n",
+    "elif a == 'сентябрь' and 23 <= b <= 31 or a == 'октябрь' and 1 <= b <= 22:\n",
+    "    print ('весы')\n",
+    "elif a == 'октябрь' and 23 <= b <= 31 or a == 'ноябрь' and 1 <= b <= 21:\n",
+    "    print ('скорпион')\n",
+    "else:\n",
+    "    print ('стрелец')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 340,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Введите заработанную плату в месяц, руб.: 100000\n",
+      "Введите сколько процентов уходит на ипотеку: 30\n",
+      "Введите сколько процентов уходит на жизнь: 60\n",
+      "Введите количество премий за год: 2\n",
+      "За 12 месяцев на ипотеку было потрачено, руб. 360000\n",
+      "За 12 месяцев было накоплено, руб. 219999\n"
+     ]
+    }
+   ],
+   "source": [
+    "salary = int(input('Введите заработанную плату в месяц, руб.: ',  ))\n",
+    "house = int(input('Введите сколько процентов уходит на ипотеку: ',  ))\n",
+    "life = int(input('Введите сколько процентов уходит на жизнь: ',  ))\n",
+    "extra_salary = int(input('Введите количество премий за год: ',  ))\n",
+    "\n",
+    "pension = str(int(salary*((extra_salary/2+12) - float((life+house)/100*12))))\n",
+    "\n",
+    "house_of_year = str(house*salary//100*12)\n",
+    "\n",
+    "print ('За 12 месяцев на ипотеку было потрачено, руб. ' + house_of_year)\n",
+    "print ('За 12 месяцев было накоплено, руб. ' + pension)\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 327,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "invalid syntax (<ipython-input-327-209f1034611e>, line 1)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-327-209f1034611e>\"\u001b[0;36m, line \u001b[0;32m1\u001b[0m\n\u001b[0;31m    def = square (number):\u001b[0m\n\u001b[0m        ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+     ]
+    }
+   ],
+   "source": [
+    "def = square (number):\n",
+    "    \"\"\"\n",
+    "    this is my function\n",
+    "    \"\"\"\n",
+    "    result = number ** 2\n",
+    "    return result\n",
+    "print (square(10))\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 339,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "invalid character in identifier (<ipython-input-339-525d93d08571>, line 2)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-339-525d93d08571>\"\u001b[0;36m, line \u001b[0;32m2\u001b[0m\n\u001b[0;31m    {‘visit1’: [‘Москва’, ‘Россия’]},\u001b[0m\n\u001b[0m            ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid character in identifier\n"
+     ]
+    }
+   ],
+   "source": [
+    "geo_logs = [\n",
+    "{‘visit1’: [‘Москва’, ‘Россия’]},\n",
+    "{‘visit2’: [‘Дели’, ‘Индия’]},\n",
+    "{‘visit3’: [‘Владимир’, ‘Россия’]},\n",
+    "{‘visit4’: [‘Лиссабон’, ‘Португалия’]},\n",
+    "{‘visit5’: [‘Париж’, ‘Франция’]},\n",
+    "{‘visit6’: [‘Лиссабон’, ‘Португалия’]},\n",
+    "{‘visit7’: [‘Тула’, ‘Россия’]},\n",
+    "{‘visit8’: [‘Тула’, ‘Россия’]},\n",
+    "{‘visit9’: [‘Курск’, ‘Россия’]},\n",
+    "{‘visit10’: [‘Архангельск’, ‘Россия’]},\n",
+    "]\n",
+    "print (geo_logs[0:2])\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.3"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
