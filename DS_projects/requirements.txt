@@ -44,7 +44,7 @@ conda-verify==3.4.2
 confuse==1.0.0
 contextlib2==0.5.5
 convertdate==2.2.0
-cryptography==2.7
+cryptography==3.2
 cycler==0.10.0
 Cython==0.29.12
 cytoolz==0.10.0
